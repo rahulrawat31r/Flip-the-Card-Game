@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flipflap.css">
+    <title>Flip Flap</title>
+</head>
+<body>
+    <div class = "boxes" id="r1">
+        <div class = "box" id="a1" onclick = "checker('a1',0)"><img src="https://cdn.iconscout.com/icon/free/png-256/star-bookmark-favorite-shape-rank-3-16006.png" alt="" height="140vh" width="40%"></div>
+        <div class = "box" id="a2" onclick="checker('a2',1)"><img src="https://cdn-icons-png.flaticon.com/512/46/46106.png" alt="" height="150rem"></div>
+        <div class = "box" id="a3" onclick="checker('a3',2)"><img src="https://www.freeiconspng.com/thumbs/bucket/free-blue-bucket-picture-download-13.png" alt="" height="140vh" width="40%"></div>
+        <div class = "box" id="a4" onclick="checker('a4',3)"><img src="https://i.pinimg.com/originals/23/ed/28/23ed2888e9adc2a82bcd19557850800b.png" alt="" height="140vh" width="40%"></div>
+    </div>
+
+    <div class = "boxes" id="r2">
+        <div class = "box" id="b1" onclick="checker('b1',4)"><img src="https://www.freeiconspng.com/thumbs/bucket/free-blue-bucket-picture-download-13.png" alt="" height="140vh" width="40%"></div>
+        <div class = "box" id="b2" onclick="checker('b2',5)"><img src="https://cdn-icons-png.flaticon.com/512/42/42877.png" alt="" height="140vh" width="40%"></div>
+        <div class = "box" id="b3" onclick="checker('b3',6)"><img src="https://cdn-icons-png.flaticon.com/512/2271/2271403.png" alt="" height="140vh" width="40%"></div>
+        <div class = "box" id="b4" onclick="checker('b4',7)"><img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="" height="140vh" width="40%"></div>
+    </div>
+
+    <div class = "boxes" id="r3">
+        <div class = "box" id="c1" onclick="checker('c1',8)"><img src="https://www.svgrepo.com/show/956/giraffe.svg" alt="" height="150rem"></div>
+        <div class = "box" id="c2" onclick="checker('c2',9)"><img src="https://cdn.iconscout.com/icon/free/png-256/star-bookmark-favorite-shape-rank-3-16006.png" alt="" height="140vh" width="40%"></div>
+        <div class = "box" id="c3" onclick="checker('c3',10)"><img src="https://i.pinimg.com/originals/23/ed/28/23ed2888e9adc2a82bcd19557850800b.png" alt="" height="140vh" width="40%"></div>
+        <div class = "box" id="c4" onclick="checker('c4',11)"><img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="" height="140vh" width="40%"></div>
+    </div>
+
+    <div class = "boxes" id="r4">
+        <div class = "box" id="d1" onclick="checker('d1',12)"><img src="https://cdn-icons-png.flaticon.com/512/2271/2271403.png" alt="" height="140vh" width="40%"></div>
+        <div class = "box" id="d2" onclick="checker('d2',13)"><img src="https://cdn-icons-png.flaticon.com/512/42/42877.png" alt="" height="140vh" width="40%"></div>
+        <div class = "box" id="d3" onclick="checker('d3',14)"><img src="https://cdn-icons-png.flaticon.com/512/46/46106.png" alt="" height="140vh" width="40%"></div>
+        <div class = "box" id="d4" onclick="checker('d4',15)"><img src="https://www.svgrepo.com/show/956/giraffe.svg" alt="" height="140vh" width="40%"></div>
+    </div>
+    <div class="score">
+        Score 0
+    </div>
+
+    <div class="victory">
+        <a href="/">Main Menu</a>
+    </div>
+
+    <audio controls id = "lala" class = "audiowala">
+        <!-- <source src="horse.ogg" type="audio/ogg"> -->
+        <source src="https://us-tuna-sounds-files.voicemod.net/3dc3f6a4-f668-4176-ad38-d8ee3f4fd77a.mp3" type="audio/mpeg">
+      <!-- Your browser does not support the audio element. -->
+      </audio>
+
+      <audio controls id = "fail" class = "audiowala">
+
+        <source src="https://us-tuna-sounds-files.voicemod.net/eb1916db-bae6-4d02-8643-3103e0f80c29-1660444764839.mp3" type="audio/mpeg">
+
+      </audio>
+      <audio controls id = "pass" class = "audiowala">
+
+        <source src="https://us-tuna-sounds-files.voicemod.net/12f65875-ffe2-4caf-ab23-b365a4cd36db.mp3" type="audio/mpeg">
+
+      </audio>
+      <audio controls id = "nhi" class = "audiowala">
+
+        <source src="https://us-tuna-sounds-files.voicemod.net/6835c5ad-ac40-4fa4-9d5e-a00703309f94-1657108060428.mp3" type="audio/mpeg">
+
+      </audio>
+      <audio controls id = "won" class = "audiowala">
+
+        <source src="https://us-tuna-sounds-files.voicemod.net/f606961d-d1ed-4ffc-b81e-2e1666fd530e-1662546849574.mp3" type="audio/mpeg">
+
+      </audio>
+    <script src="worker.js"></script>
+</body>
+</html>

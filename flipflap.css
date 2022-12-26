@@ -1,0 +1,199 @@
+body{
+    margin: 2px;
+    background-image: url('https://img.freepik.com/free-vector/yellow-background-with-halftone-lines-design_1017-30148.jpg?w=2000');
+}
+.boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border : 2px solid red; */
+    margin: 0px 0px 10px 0px;
+    height: 10.6rem;
+    /* flex-direction: column; */
+}
+
+.box{
+    border : 2px solid black;
+    width: 23%;
+    padding : 4px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(46, 201, 64);
+    border-radius: 25px;
+    transition-property: background-color;
+    transition-duration: 0.7s;
+    transition-timing-function: linear;
+
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-duration: 0.3;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    transition: padding;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+@keyframes kake{
+    0%{
+        transform: rotateY(0deg);
+    }
+
+    100%{
+        transform: rotateY(180deg);
+    }
+
+}
+
+@keyframes shaker {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+}
+
+
+@keyframes kake2{
+    0%{
+        transform: rotateY(180deg);
+    }
+
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+
+.box:hover{
+    position:static;
+    padding: 8px 4px 8px 4px ;
+    cursor:pointer
+}
+
+.box img{
+    opacity: 0%;
+    transition-property: opacity;
+    transition-delay: 0.8s;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.score{
+    /* border : 2px solid white; */
+    position: absolute;
+    z-index: 3;
+    width: 9rem;
+    height: 5%;
+    top: 3%;
+    right: 1%;
+    border-radius: 25px;
+    
+
+    animation-name: scoreanim;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bolder;
+
+    
+}
+
+@keyframes scoreanim {
+    0%{
+        background-color: red;
+        color: white;
+    }
+
+    40%{
+        background-color: rgb(214, 245, 9);
+        color: black;
+    }
+
+    70%{
+        background-color: rgb(98, 0, 255);
+        color:  white;
+    }
+
+    100%{
+        color: white;
+        background-color: red;
+    }
+}
+a{
+    text-decoration: none;
+    color: rgb(12, 255, 21);
+    background-color: red;
+    height: 5%;
+    padding: 10px;
+    border-radius: 25px;
+    font-weight: bolder;
+}
+
+a:hover{
+    background-color: rgb(164, 44, 44);
+}
+a:visited{
+    color:  inherit;
+}
+.victory{
+    position: absolute;
+    opacity: 0%;
+    width: 00%;
+    /* border: 2px solid white; */
+    height: 99%;
+    top: 0%;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    align-items:flex-end;
+    justify-content:center;
+    background-image: url('https://media.giphy.com/media/lZTvTGEGKU6gnQ2wBr/giphy.gif');
+    background-repeat:no-repeat;
+    background-position: center;
+    backdrop-filter: blur(4px);
+    z-index: 2;
+    transition:all;
+
+    animation-duration: 1.6s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes winner {
+    0%{
+        width: 0%;
+        opacity: 0%;
+    }
+
+    100%{
+        width: 100%;
+        opacity: 100%;
+    }
+}
+
+.audiowala{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .boxes{
+         flex-direction: column;
+         height: auto;
+         
+    }
+
+    .box{
+        margin: 6px;
+    }
+
+    
+}

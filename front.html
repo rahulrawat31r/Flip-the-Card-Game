@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="front.css">
+    <title>Flip The Card</title>
+</head>
+<body>
+        <h3 id = "hello">Welcome To Flip the Card </h3>
+        <div class="container">
+            <div class="box ins"  id = "go2" onclick="flipit('go2')" onmouseleave="flipit2('go2')">
+                <h2>Instructions</h2>
+                <ol>
+                    <li>You have to choose two cards with same object.</li>
+                    <li>For every card you choose 10 points will be deducted.</li>
+                    <li>For every correct match 200 points will be awarded.</li>
+                </ol>
+            </div>
+
+            <div class="box flips" id = "flip"><span id = "textf">Hey Clik my Neighbours</span></div>
+
+            <div class="box" id = "go" onclick="flipit('go')" onmouseleave="flipit2('go')">
+                <a href="/game" id = "chalo" onclick = "ganabajao()">Let's Go</a>
+            </div>
+        </div>
+        <audio controls id = "rha" class = "audiowala" >
+
+            <source src="https://us-tuna-sounds-files.voicemod.net/5813bdb6-b021-4ddf-8e3f-0d9deae43786-1666381211215.mp3">
+    
+          </audio>
+<script src="worker.js"></script>
+
+</body>
+</html>
